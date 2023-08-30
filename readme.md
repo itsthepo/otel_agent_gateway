@@ -2,8 +2,8 @@
 - This could be beneficial to you if you need to collect data from secure networks that only have the ability to talk to a DMZ or to a 'jumpbox'. 
 
 - There are two components to this setup: 
-    - 1. Creating an agent config. Please see [agent-config.md](/agent/agent-config.md)
-    - 2. Creating a gateway config. Please see [gateway-config.md](/gateway/gateway-config.md)
+    - 1. Creating an agent config. Please see [agent-config.md](/agent/readme.md)
+    - 2. Creating a gateway config. Please see [gateway-config.md](/gateway/readme.md)
 
 *Improvements coming*: 
 
