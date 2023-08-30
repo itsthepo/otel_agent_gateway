@@ -6,13 +6,13 @@
 
 - Navigate to your Sumo Logic tenant -> Collection -> OpenTelemetry Collection
 
-![otel-collection](screenshots/gateway/otel-collection.png)
+![otel-collection](/screenshots/gateway/otel-collection.png)
 
 - Create a new installation token 
 - Add any custom tags, in this example I did device = gateway
 - Copy and run the command the UI provides you to install the collector. Once the installation is completed, you will see a green box indicating the collector registered successfully. 
 
-![otel-config-example](screenshots/gateway/otel-collection-config.png)
+![otel-config-example](/screenshots/gateway/otel-collection-config.png)
 
 #### Step 2 - Create your config file 
 
@@ -58,11 +58,11 @@ systemctl status otelcol-sumo
  - You can leverage [Live Tail](https://help.sumologic.com/docs/search/live-tail/about-live-tail/) to validate logs are coming into the platform. 
 
 - From the otel collection page in your Sumo tenant you can open in a log search
-![log-search](screenshots/gateway/log-search.png)
+![log-search](/screenshots/gateway/log-search.png)
 
 - This will open you up into a log search, from there you can run the search or select live tail
-![live-tail](screenshots/gateway/live-tail.png)
+![live-tail](/screenshots/gateway/live-tail.png)
 
 - If everything is configured correctly, you should start to see logs flowing into your sumo instance
-![data](screenshots/gateway/live-tail-complete.png)
+![data](/screenshots/gateway/live-tail-complete.png)
 

@@ -7,10 +7,10 @@
     - *In this example, my agent is a RHEL machine and my gateway is Debian based* 
 
 - Download the collector to your dmz machine
-![curl](screenshots/agent/curl-command.png)
+![curl](/screenshots/agent/curl-command.png)
 
 - SCP the file to your secure machine 
-![scp](screenshots/agent/scp.png)
+![scp](/screenshots/agent/scp.png)
 
 #### Step 2. Move the binary to your `PATH` environment
 
@@ -28,9 +28,9 @@ To verify installation, run the OpenTelemetry Collector.
 ```bash
 otelcol-sumo --version
 ```
-- Example output
+- Example output:
 
-![example-version](screenshots/agent/version.png)
+![version](/screenshots/agent/version.png)
 
 **IMPORTANT prerequisites**
 Ensure that the user who will run the `otelcol-sumo` process has access to any directories used in your configuration within the filesystem.
