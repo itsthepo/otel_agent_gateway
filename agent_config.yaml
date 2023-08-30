@@ -1,0 +1,26 @@
+exporters:
+  logging:
+    verbosity: detailed
+    sampling_initial: 5
+    sampling_thereafter: 200
+  otlp/2:
+    endpoint: IP_ADDRESS:4317
+    tls:
+      insecure: true
+
+
+receivers:
+  filelog:
+    start_at: beginning
+    include:
+    # Examples 
+      - /tmp/testlogs/*.txt
+
+service:
+  pipelines:
+    logs:
+      receivers:
+        - filelog
+      exporters:
+        - otlp/2
+        - logging

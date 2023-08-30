@@ -1,0 +1,22 @@
+receivers:
+  otlp:
+    protocols:
+      grpc:
+      http:
+
+processors:
+  resource/something:
+    attributes:
+      - key: _sourceCategory
+        value: otel/linux/testlogs
+        action: insert
+
+service:
+  pipelines:
+    logs/something:
+      receivers:
+        - otlp
+      processors:
+        - resource/something
+      exporters:
+        - sumologic
