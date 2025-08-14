@@ -7,8 +7,8 @@ receivers:
 processors:
   resource/something:
     attributes:
-      - key: _sourceCategory
-        value: otel/linux/testlogs
+      - key: something
+        value: something
         action: insert
 
 service:
@@ -19,4 +19,8 @@ service:
       processors:
         - resource/something
       exporters:
+        - abstract
         - sumologic
+        - elastic
+        - etc
+        - etc
